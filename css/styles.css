@@ -63,8 +63,8 @@
 }
 
 .chat__user-type{
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   display: inline-block;
   background-repeat: no-repeat;
   background-size: contain;
@@ -75,6 +75,21 @@
 
 .chat__user-type-person{
   background-image: url("../img/user.svg");
+}
+
+.chat__user-type-channel{
+  background-image: url("../img/cahnel-icon.svg");
+  display: block;
+}
+
+.chat__user-type-bot{
+  display: block;
+  background-image: url("../img/bot-icon.svg");
+}
+
+.chat__user-type-group{
+  display: block;
+  background-image: url("../img/group-icon.svg");
 }
 
 .chat__status{
