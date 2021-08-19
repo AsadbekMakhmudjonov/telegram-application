@@ -14,10 +14,10 @@
 
   <main class="m-0 overflow-hidden">
 
-    <div class="row  m-0 ">
+    <div class="row  m-0">
 
       <!-- COL-3 -->
-      <div class="col-3 p-0 w-100 bg-white">
+      <div class="col-lg-3 p-0 w-100 bg-white">
 
         <!-- CHATS  -->
         <div class="chats  bg-white">
@@ -25,7 +25,7 @@
           <!-- CHATS TOP NAVIGATION -->
           <div class="chats__top mb-2 py-2 bg-white d-flex align-items-center justify-content-between">
             <button class="btn btn-block chats__nav-toggler"
-            aria-label="button-nav">
+            aria-label="button-nav" data-toggle="modal" data-target="#hamburger ">
 
           </button>
           <form class="flex-grow-1" action="https://echo.htmlacademy.ru" method="get">
@@ -196,9 +196,9 @@
 
     </div>
     <!-- COL-6 -->
-    <div class="col-6 bg-info"></div>
+    <div class="col-lg-6 bg-info"></div>
     <!-- COL-3 -->
-    <div class="col-3 bg-danger"></div>
+    <div class="col-lg-3 bg-danger"></div>
 
   </div>
 
@@ -206,23 +206,95 @@
 
 
 
-<div class="modal fade modal-lock position-absolute to" id="modalBlock" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog no-gutters modal-lock__dialog">
-    <div class="modal-content modal-lock__content justify-content-center border-0 ">
-      <div class="modal-body ">
-        <h2 class="h6">Enter your local passcode</h2>
-        <label>
-          Your password
-          <input class="form-control mt-2" type="password" placeholder="">
-        </label>
-      </div>
-      <div class="modal-footer border-0 p-0">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+
+<!-- MODAL MENU -->
+<div class="modal fade" id="hamburger" tabindex="-1" aria-labelledby="exampleModalLabel"
+aria-hidden="true">
+<div class="modal-dialog m-0 w-100 rounded-0">
+  <div class="modal-content account-modal__content rounded-0">
+    <div class="modal-body p-0 vh-100 overflow-hidden">
+      <div class="p-4 bg-secondary">
+        <div class="d-flex justify-content-between w-100 mb-4">
+          <img class="rounded-pill " src="img/icon-me.jpg" alt="user" width="60" height="60">
+          <a class="saved-massage rounded-pill" href="#seved-massage"></a>
+        </div>
+        <div class="">
+          <a class="btn d-flex align-items-center justify-content-between text-white p-0" data-toggle="collapse"
+          href="#new-account" role="button" aria-expanded="false" aria-controls="collapseExample">
+          <div class="d-flex flex-column align-items-start">
+            <p class="mb-0 font-weight-bold">Asadbek</p>
+            <span>+998 90 9754323</span>
+          </div>
+          <img src="img/icon-down.svg" alt="arrow" width="40" height="30">
+        </a>
       </div>
     </div>
+    <div class="vh-100 overflow-auto ">
+      <div class="collapse" id="new-account">
+        <div class="card card-body border-0 border-bottom p-3">
+          <a class="nav-link active rounded-0 w-100 p-0 mb-3" data-toggle="pill" href="#pills-home"
+          role="tab" aria-controls="pills-home" aria-selected="true">
+          <div class="media align-items-center">
+            <div class="position-relative">
+              <img src="img/icon-me.jpg" class="rounded-pill mr-3" alt="icon me" width="20" height="20">
+            </div>
+            <div class="media-body d-flex align-items-center justify-content-between">
+              <h5 class="text-dark mb-0 h6">Asadbek</h5>
+              <span class="rounded-pill p-1 h6 bg-secondary text-white mb-0">+87</span>
+            </div>
+          </div>
+        </a>
+        <a class="nav-link active rounded-0 w-100 p-0" data-toggle="pill" href="#pills-home" role="tab"
+        aria-controls="pills-home" aria-selected="true">
+        <div class="media align-items-center">
+          <div class="">
+            <img src="img/user.svg" class="rounded-pill mr-3" alt="icon" width="20" height="20">
+          </div>
+          <div class="media-body d-flex align-items-center justify-content-between">
+            <h5 class="text-dark mb-0 h6">Add Account</h5>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
+  <div class="p-4  pt-1 mb-auto">
+    <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+      <img class="mr-3" src="img/group-icon.svg" alt="new group" width="20" height="20">
+      <h5 class="mb-0 text-dark h6">New Group</h5>
+    </a>
+    <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+      <img class="mr-3" src="img/cahnel-icon.svg" alt="channel" width="20" height="20">
+      <h5 class="mb-0 text-dark h6">New Channel</h5>
+    </a>
+    <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+      <img class="mr-3" src="img/group-icon.svg" alt="new group" width="20" height="20">
+      <h5 class="mb-0 text-dark h6">Contacts</h5>
+    </a>
+    <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+      <img class="mr-3" src="img/phone-icon.svg" alt="icon" width="20" height="20">
+      <h5 class="mb-0 text-dark h6">Calls</h5>
+    </a>
+    <a class="d-flex align-items-center text-decoration-none mb-3" href="#">
+      <img class="mr-3" src="img/settings-icon.svg" alt="icon" width="20" height="20">
+      <h5 class="mb-0 text-dark h6">Settings</h5>
+    </a>
+    <a class="d-flex align-items-center text-decoration-none custom-switch p-0" href="#">
+      <img class="mr-3" src="img/moon-icon.svg" alt="icon" width="20" height="20">
+      <h5 class="mb-0 text-dark h6">Night Mode</h5>
+      <div class="custom-control custom-switch ml-2">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1"></label>
+      </div>
+    </a>
+  </div>
+  <div class="p-4 mt-auto d-flex flex-column">
+    <a class="font-weight-bold text-secondary mb-1" href="https://telegram.com">Telegram Desktop</a>
+    <a class="text-secondary" href="#">Version 2.6.1 - About</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
 <script src="js/jquery-3.6.0.min.js"></script>

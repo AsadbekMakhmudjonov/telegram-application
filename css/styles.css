@@ -16,12 +16,16 @@
   border-radius: 20px;
 }
 
+a:hover{
+  text-decoration: none;
+}
 
 /* CHATS NAV */
 .chats__top{
   z-index: 10;
 
 }
+
 
 .chats__nav-toggler{
   flex-shrink: 0;
@@ -138,8 +142,6 @@
   left: 0;
 }
 
-
-
 .modal-lock__content{
 
   justify-content: center;
@@ -151,4 +153,9 @@
 .modal-lock__dialog{
   margin: auto;
   margin-top: 100px;
+}
+
+/* ACCOUNT MODAL */
+.account-modal__content{
+  max-width: 300px;
 }
