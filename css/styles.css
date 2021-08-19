@@ -1,0 +1,139 @@
+
+/* SCROLL BAR */
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(51, 51, 51, 0.26);
+  border-radius: 20px;
+}
+
+
+/* CHATS NAV */
+.chats__top{
+  z-index: 10;
+
+}
+
+.chats__nav-toggler{
+  flex-shrink: 0;
+  width: 45px;
+  height: 35px;
+  display: inline-block;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.chats__nav-locker{
+  flex-shrink: 0;
+  width: 45px;
+  height: 35px;
+  display: inline-block;
+  background-image: url("../img/ic-unlock.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+
+
+/* CHAT */
+
+.chat-icon{
+  border-radius: 50%;
+}
+
+.chat__time{
+  font-size: 14px;
+}
+
+.chat__body-top-left{
+  display: flex;
+  align-items: center;
+}
+
+.chat__user-type{
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 4px;
+  display: none;
+}
+
+.chat__user-type-person{
+  background-image: url("../img/user.svg");
+}
+
+.chat__status{
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-right: 4px;
+  display: none;
+}
+
+.chat__status-sended{
+  display: block;
+  background-image: url("../img/ic-sended.svg");
+}
+
+.chat__person-send{
+  margin-right: 5px;
+}
+.chat__content{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 190px;
+  margin-bottom: 0;
+}
+
+.chat__sms-pinned {
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  margin-left: 4px;
+}
+
+.chat__pinned-img{
+  background-image: url("../img/icon-pin.svg");
+  display: inline-block;
+}
+
+.modal-lock{
+  width: 100%;
+  background-color: #fff;
+  top:0;
+  left: 0;
+}
+
+
+
+.modal-lock__content{
+
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-lock__dialog{
+  margin: auto;
+  margin-top: 100px;
+}
