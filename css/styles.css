@@ -23,14 +23,14 @@ a:hover{
 /* CHATS NAV */
 .chats__top{
   z-index: 10;
-
+  padding: 14px 5px;
+  margin-bottom: 12px;
 }
-
 
 .chats__nav-toggler{
   flex-shrink: 0;
-  width: 45px;
-  height: 35px;
+  width: 40px;
+  height: 30px;
   display: inline-block;
   background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
@@ -40,8 +40,8 @@ a:hover{
 
 .chats__nav-locker{
   flex-shrink: 0;
-  width: 45px;
-  height: 35px;
+  width: 40px;
+  height: 30px;
   display: inline-block;
   background-image: url("../img/ic-unlock.svg");
   background-repeat: no-repeat;
@@ -49,6 +49,9 @@ a:hover{
   background-position: center center;
 }
 
+.chats__list{
+  height: 90vh;
+}
 
 
 /* CHAT */
@@ -117,8 +120,9 @@ a:hover{
 .chat__content{
   white-space: nowrap;
   text-overflow: ellipsis;
-  max-width: 190px;
+  max-width: 150px;
   margin-bottom: 0;
+  opacity: 0.8;
 }
 
 .chat__sms-pinned {
@@ -135,27 +139,207 @@ a:hover{
   display: inline-block;
 }
 
-.modal-lock{
-  width: 100%;
-  background-color: #fff;
-  top:0;
-  left: 0;
+.modal.fade .modal-dialog {
+  transform: translateX(-1000px)
 }
 
-.modal-lock__content{
-
-  justify-content: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.modal.fade.show .modal-dialog {
+  transform: translateX(0);
 }
 
-.modal-lock__dialog{
+.modal-dialog {
+  margin: 0 !important;
+}
+
+
+.profile-modal__dialog{
+  width: 300px !important;
+}
+
+
+.modal-account.fade .modal-dialog{
+  transform: translateX(-1000px) !important;
+}
+
+.modal-account.fade .modal-dialog{
+  transform: translateX(0) !important;
+}
+
+
+.modal-dialog{
+  /* margin: 100px !important; */
+}
+
+.modal-account__dialog{
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100%;
+  max-width: 100%;
+  margin: 0;
+  display: flex;
+}
+
+.modal-account__content{
+  width: 350px;
   margin: auto;
-  margin-top: 100px;
 }
 
-/* ACCOUNT MODAL */
-.account-modal__content{
-  max-width: 300px;
+/* SECTION MESSAGE */
+
+.messages__header {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.message__header-status{
+  font-size: 10px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.message__header-nav {
+  padding-right: 10px;
+}
+
+.message__header {}
+
+.messages__header-left{
+  padding: 14px 5px;
+}
+
+.message__header-btn{
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.message__header-search-btn {
+  background-image: url("../img/search.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.message__header-sizer {
+  background-image: url("../img/icon-sizer.svg");
+  width: 20px;
+  height: 20px;
+}
+
+.message__header-audio-chat {
+  display: none;
+}
+
+.message__header-settings {
+  background-image: url("../img/menu-dots.svg");
+  width: 10px;
+  height: 20px;
+  border-radius: 20px;
+  background-position: center center;
+}
+
+/* MESSAGE TEXTING */
+
+.message__wrapper-box{
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: auto;
+  max-width: 63%;
+  min-width: 25%;
+  margin-left: 25px;
+}
+
+.message__wrapper-box:hover .message__reply{
+  opacity: 0.8;
+}
+
+.message__center{
+  background-image: url("../img/message-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.message__center{
+  height: 80vh;
+  overflow: auto;
+}
+
+.message__user-name{
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-right: auto;
+}
+
+.message__reply{
+  font-size: 10px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: rgba(44, 43, 43, 0.459);
+  cursor: pointer;
+}
+
+.message__wrapper-text{
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.message__center .message__wrapper:nth-child(odd) {
+}
+
+.message__center .message__wrapper:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.message__center .message__wrapper:nth-child(even) .message__user-icon{
+  display: none !important;
+}
+
+.message__center .message__wrapper:nth-child(even) .message__user-name{
+  display: none;
+}
+
+.message__center .message__wrapper:nth-child(even) .message__reply{
+  display: none;
+}
+
+.message__time{
+  font-size: 12px;
+  color: #0aaf0abb;
+}
+
+.message__status{
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/ic-sended.svg");
+  background-position: center center;
+  display: block;
+  flex-shrink: 0;
+  background-size: contain;
+  margin-left: 2px;
+}
+.message__wrapper-box{
+  position: relative;
+}
+.message__center .message__wrapper:nth-child(odd) .message__wrapper-box::before {
+  display: block;
+  position: absolute;
+  left: -8px;
+  bottom: 0;
+  content: '';
+  border: 6px solid white;
+  border-top-color: transparent;
+  border-bottom-color: white;
+  border-left-color: transparent;
+  border-right-color: white;
+}
+
+.message__center .message__wrapper:nth-child(even) .message__wrapper-box::before{
+  display: block;
+  position: absolute;
+  right: -16px;
+  bottom: 0;
+  border: 6px solid red;
+  border-top-color: transparent;
+  border-bottom-color: white;
+  border-left-color: white;
+  border-right-color: transparent;
 }

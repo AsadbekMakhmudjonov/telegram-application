@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Countries</title>
+  <title>Telegram</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -14,32 +14,33 @@
 
   <main class="m-0 overflow-hidden">
 
-    <div class="row  m-0">
+    <div class="row m-0 no-gutters">
 
       <!-- COL-3 -->
-      <div class="col-lg-3 p-0 w-100 bg-white">
+      <div class="col-lg-3 w-100 bg-white">
 
         <!-- CHATS  -->
         <div class="chats  bg-white">
 
           <!-- CHATS TOP NAVIGATION -->
-          <div class="chats__top mb-2 py-2 bg-white d-flex align-items-center justify-content-between">
+          <div class="chats__top bg-white d-flex align-items-center justify-content-between">
             <button class="btn btn-block chats__nav-toggler"
-            aria-label="button-nav" data-toggle="modal" data-target="#hamburger ">
+            aria-label="button nav" data-toggle="modal" data-target="#hamburger ">
 
           </button>
           <form class="flex-grow-1" action="https://echo.htmlacademy.ru" method="get">
-            <input class="form-control chats__nav-search bg-light" type="search" placeholder="search">
+            <input class="form-control chats__nav-search bg-light" type="search" placeholder="search"
+            name="search_chat" aria-label="searching using">
           </form>
-          <button class="btn chats__nav-locker" data-toggle="modal" data-target="#modalBlock">
+          <button class="btn chats__nav-locker" data-toggle="modal" data-target="#local-password">
           </button>
 
         </div>
 
-        <ul class="chats__list vh-100 overflow-auto p-0 px-2 list-unstyled">
+        <ul class="chats__list d-flex flex-column overflow-auto p-0 list-unstyled">
 
-          <li class="chats__item  chat mb-3">
-            <a class="chat d-block d-flex no-gutters text-dark" href="#">
+          <li class="chats__item chat mb-3">
+            <a class="chat d-flex text-dark px-2 px-2" href="#">
               <img class="chat-icon mr-2" src="img/icon-abdulloh.jpg" alt="icon Abdulloh" width="50" height="50">
               <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
                 <!-- CHAT BODY TOP -->
@@ -77,7 +78,82 @@
           </li>
 
           <li class="chats__item  chat mb-3">
-            <a class="chat d-block d-flex no-gutters text-dark" href="#">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-mayoq.jpg" alt="icon Mayoq" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type chat__user-type-channel"></span>
+                    <h3 class="chat__name h6 m-0">Mayoq</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">01:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">Photo:</span>
+                    <p class="chat__content text-truncate">Dasturlashga oid juda kop manba'lar</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="chats__item chat mb-3">
+            <a class="chat d-flex text-dark px-2 px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-abdulloh.jpg" alt="icon Abdulloh" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type"></span>
+                    <h3 class="chat__name h6 m-0">Abdulloh Frontend</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">04:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">You:</span>
+                    <p class="chat__content text-truncate">Uy ishini tashlab yubordim ko'chirib olsangiz bo'ldi</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
               <img class="chat-icon mr-2" src="img/icon-mayoq.jpg" alt="icon Mayoq" width="50" height="50">
               <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
                 <!-- CHAT BODY TOP -->
@@ -115,7 +191,7 @@
           </li>
 
           <li class="chats__item  chat mb-3">
-            <a class="chat d-block d-flex no-gutters text-dark" href="#">
+            <a class="chat d-flex text-dark px-2" href="#">
               <img class="chat-icon mr-2" src="img/icon-evos.jpg" alt="icon Abdulloh" width="50" height="50">
               <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
                 <!-- CHAT BODY TOP -->
@@ -153,7 +229,311 @@
           </li>
 
           <li class="chats__item  chat mb-3">
-            <a class="chat d-block d-flex no-gutters text-dark" href="#">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/frontent-group.png" alt="icon bootcamp" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type chat__user-type-group"></span>
+                    <h3 class="chat__name h6 m-0">Frontend bootcamp</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">11:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">You:</span>
+                    <p class="chat__content text-truncate">Uy ishini tashlab yubordim ko'chirib olsangiz bo'ldi</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-abdulloh.jpg" alt="icon Abdulloh" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type"></span>
+                    <h3 class="chat__name h6 m-0">Abdulloh Frontend</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">04:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">You:</span>
+                    <p class="chat__content text-truncate">Uy ishini tashlab yubordim ko'chirib olsangiz bo'ldi</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-mayoq.jpg" alt="icon Mayoq" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type chat__user-type-channel"></span>
+                    <h3 class="chat__name h6 m-0">Mayoq</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">01:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">Photo:</span>
+                    <p class="chat__content text-truncate">Dasturlashga oid juda kop manba'lar</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-evos.jpg" alt="icon Abdulloh" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left d-flex align-items-center">
+
+                    <span class="chat__user-type chat__user-type-bot"></span>
+                    <h3 class="chat__name h6 m-0">Evos Доставка</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">12:50 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">You:</span>
+                    <p class="chat__content text-truncate">Lavash s sirom, fri, coca cola</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/frontent-group.png" alt="icon bootcamp" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type chat__user-type-group"></span>
+                    <h3 class="chat__name h6 m-0">Frontend bootcamp</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">11:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">You:</span>
+                    <p class="chat__content text-truncate">Uy ishini tashlab yubordim ko'chirib olsangiz bo'ldi</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-abdulloh.jpg" alt="icon Abdulloh" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type"></span>
+                    <h3 class="chat__name h6 m-0">Abdulloh Frontend</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">04:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">You:</span>
+                    <p class="chat__content text-truncate">Uy ishini tashlab yubordim ko'chirib olsangiz bo'ldi</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-mayoq.jpg" alt="icon Mayoq" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left">
+
+                    <span class="chat__user-type chat__user-type-channel"></span>
+                    <h3 class="chat__name h6 m-0">Mayoq</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">01:40 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">Photo:</span>
+                    <p class="chat__content text-truncate">Dasturlashga oid juda kop manba'lar</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2" href="#">
+              <img class="chat-icon mr-2" src="img/icon-evos.jpg" alt="icon Abdulloh" width="50" height="50">
+              <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
+                <!-- CHAT BODY TOP -->
+                <div class="chat__body-top d-flex justify-content-between align-items-center">
+
+                  <div class="chat__body-top-left d-flex align-items-center">
+
+                    <span class="chat__user-type chat__user-type-bot"></span>
+                    <h3 class="chat__name h6 m-0">Evos Доставка</h3>
+
+                  </div>
+
+                  <div class="chat__body-top-right d-flex align-items-center">
+                    <span class="chat__status chat__status-sended"></span>
+                    <time class="chat__time" datetime="11:40">12:50 AM</time>
+                  </div>
+
+                </div>
+
+                <!-- CHAT BODY BOTTOM -->
+                <div class="chat__body-bottom d-flex justify-content-between">
+
+                  <div class="chat__body-bottom-left d-flex">
+                    <span class="chat__person-send text-primary">You:</span>
+                    <p class="chat__content text-truncate">Lavash s sirom, fri, coca cola</p>
+                  </div>
+
+                  <div class="chat__body-bottom-right d-flex">
+                    <span class="chat__sms-pinned chat__pinned-img"></span>
+                  </div>
+
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="chats__item  chat mb-3">
+            <a class="chat d-flex text-dark px-2 pb-2" href="#">
               <img class="chat-icon mr-2" src="img/frontent-group.png" alt="icon bootcamp" width="50" height="50">
               <div class="chat__body flex-grow-1 d-flex flex-column justify-content-between">
                 <!-- CHAT BODY TOP -->
@@ -194,14 +574,99 @@
       </div>
 
 
-    </div>
+      </div>
     <!-- COL-6 -->
-    <div class="col-lg-6 bg-info"></div>
+    <div class="col-lg-6 bg-white">
+      <h2 class="sr-only">Messaging section</h2>
+      <div class="tab-content">
+        <div class="messages">
+          <h3 class="sr-only">Messages list</h3>
+          <div class="tab-pane" role="message">
+
+            <div class="message d-flex flex-column vh-100">
+
+              <div class="messages__header d-flex justify-content-between align-items-center">
+                <div class="messages__header-left position-relative flex-grow-1">
+                  <button class="message__info-btn border-0 bg-white text-left stretched-link">
+                    <span class="message__header-name h6 m-0 d-block">
+                      Frontend Bootcamp N1 |09:00| #nt044
+                    </span>
+                    <span class="message__header-status">21 members</span>
+                  </button>
+                </div>
+                <div class="message__header-nav">
+                  <button class="btn message__header-btn message__header-search-btn mr-1" type="button">
+                  </button>
+                  <button class="btn message__header-btn message__header-audio-chat mr-1" type="button">
+                  </button>
+                  <button class="btn message__header-btn message__header-sizer mr-1" type="button">
+                  </button>
+                  <button class="btn message__header-btn message__header-settings" type="button">
+                  </button>
+                </div>
+              </div>
+
+              <div class="message__center message__center--open bg-secondary flex-grow-1 px-2">
+
+                <div class="message__wrapper d-flex align-items-end mb-2 mt-2">
+                  <img class="message__user-icon rounded-circle" src="img/icon-abdulloh.jpg" alt="image of Abdulloh"
+                  width="30" height="30">
+                  <div class="message__wrapper-box">
+                    <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                      <p class="message__user-name text-danger">Abdulloh</p>
+                      <span class="message__reply">Reply</span>
+                    </div>
+
+                    <div class="message__wrapper-bottom d-flex align-items-end justify-content-between">
+                      <p class="message__wrapper-text">Ustoz</p>
+                      <div class="message__wrapper-bottom-right d-flex align-items-center">
+                        <time class="message__time" datetime="9:14">9:14 AM</time>
+                        <span class="message__status"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="message__wrapper d-flex align-items-end mb-2">
+                    <img class="rounded-circle message__user-icon" src="img/icon-abdulloh.jpg" alt="image of Abdulloh"
+                    width="30" height="30">
+                    <div class="message__wrapper-box">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+                      <p class="message__wrapper-text">Uy ishini hali qilmadim. Men shunaqa dangasa bolaman ishyoqmas.Hammadan kochirib yururaman </p>
+                    </div>
+                </div>
+
+                <div class="message__wrapper d-flex align-items-end mb-2">
+                    <img class="rounded-circle message__user-icon" src="img/icon-abdulloh.jpg" alt="image of Abdulloh"
+                    width="30" height="30">
+                    <div class="message__wrapper-box">
+                      <div class="message__wrapper-top d-flex justify-content-between align-items-center">
+                        <p class="message__user-name text-danger">Abdulloh</p>
+                        <span class="message__reply">Reply</span>
+                      </div>
+                      <p class="message__wrapper-text">Uy ishini hali qilmadim. Men shunaqa dangasa bolaman ishyoqmas.Hammadan kochirib yururaman </p>
+                    </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- COL-3 -->
     <div class="col-lg-3 bg-danger"></div>
-
   </div>
-
 </main>
 
 
@@ -210,17 +675,17 @@
 <!-- MODAL MENU -->
 <div class="modal fade" id="hamburger" tabindex="-1" aria-labelledby="exampleModalLabel"
 aria-hidden="true">
-<div class="modal-dialog m-0 w-100 rounded-0">
+<div class="modal-dialog profile-modal__dialog m-0 w-100 rounded-0">
   <div class="modal-content account-modal__content rounded-0">
-    <div class="modal-body p-0 vh-100 overflow-hidden">
+    <div class="modal-body p-0 vh-100 ">
       <div class="p-4 bg-secondary">
         <div class="d-flex justify-content-between w-100 mb-4">
           <img class="rounded-pill " src="img/icon-me.jpg" alt="user" width="60" height="60">
           <a class="saved-massage rounded-pill" href="#seved-massage"></a>
         </div>
-        <div class="">
+        <div>
           <a class="btn d-flex align-items-center justify-content-between text-white p-0" data-toggle="collapse"
-          href="#new-account" role="button" aria-expanded="false" aria-controls="collapseExample">
+          href="#new-account"  aria-expanded="false" aria-controls="collapseExample">
           <div class="d-flex flex-column align-items-start">
             <p class="mb-0 font-weight-bold">Asadbek</p>
             <span>+998 90 9754323</span>
@@ -232,8 +697,7 @@ aria-hidden="true">
     <div class="vh-100 overflow-auto ">
       <div class="collapse" id="new-account">
         <div class="card card-body border-0 border-bottom p-3">
-          <a class="nav-link active rounded-0 w-100 p-0 mb-3" data-toggle="pill" href="#pills-home"
-          role="tab" aria-controls="pills-home" aria-selected="true">
+          <a class="nav-link active rounded-0 w-100 p-0 mb-3" data-toggle="pill" href="#pills-home" role="button">
           <div class="media align-items-center">
             <div class="position-relative">
               <img src="img/icon-me.jpg" class="rounded-pill mr-3" alt="icon me" width="20" height="20">
@@ -244,10 +708,9 @@ aria-hidden="true">
             </div>
           </div>
         </a>
-        <a class="nav-link active rounded-0 w-100 p-0" data-toggle="pill" href="#pills-home" role="tab"
-        aria-controls="pills-home" aria-selected="true">
+        <a class="nav-link active rounded-0 w-100 p-0" data-toggle="pill" href="#pills-home" aria-selected="true" role="button" aria-checked="mixed">
         <div class="media align-items-center">
-          <div class="">
+          <div>
             <img src="img/user.svg" class="rounded-pill mr-3" alt="icon" width="20" height="20">
           </div>
           <div class="media-body d-flex align-items-center justify-content-between">
@@ -283,7 +746,6 @@ aria-hidden="true">
       <h5 class="mb-0 text-dark h6">Night Mode</h5>
       <div class="custom-control custom-switch ml-2">
         <input type="checkbox" class="custom-control-input" id="customSwitch1">
-        <label class="custom-control-label" for="customSwitch1"></label>
       </div>
     </a>
   </div>
@@ -296,6 +758,34 @@ aria-hidden="true">
 </div>
 </div>
 </div>
+
+
+<!-- MODAL ACCOUNT -->
+<div class="modal-account modal fade " data-backdrop="static" id="local-password" tabindex="-1"
+  aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-account__dialog bg-white">
+    <div class="modal-content modal-account__content border-0">
+      <div class="modal-header align-items-center border-0 mb-1">
+        <h5 class="modal-title" id="exampleModalLabel">Enter your local password</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <input class="form-control mb-2 py-2" type="password" name="enter_password" placeholder="password" required aria-label="entering password">
+
+          <button class="btn btn-block btn-primary text-uppercase py-2 mb-2" type="submit">submit</button>
+          <div class="text-center"><a class="text-center text-secondary" href="#">log out</a></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- MODAL MESSAGE INFO -->
+
 
 <script src="js/jquery-3.6.0.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
