@@ -517,28 +517,45 @@ a{
   background-repeat: no-repeat;
 }
 
+.sitebar::before{
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 10px;
+}
+
 .sitebar--notification::before {
   background-image: url("../img/notification-icon.svg");
+  display: block;
+  content: '';
 }
 
 .sitebar--photo::before {
-  background-image: url("../img/image-icon.svg");
+  background-image: url("../img/image.svg");
+  display: block;
+  content: "";
 }
 
 .sitebar--video::before {
-  background-image: url("../img/video-icon.svg");
-}
+ background-image: url("../img/video-camera.svg");
+ display: block;
+ content: "";
+ }
 
 .sitebar--link::before {
-  background-image: url("../img/link-icon.svg");
+  background-image: url("../img/link-share.svg");
 }
 
 .sitebar--voice::before {
-  background-image: url("../img/voice-icon.svg");
+  background-image: url("../img/mic.svg");
 }
 
 .sitebar--gif::before {
-  background-image: url("../img/gif-icon.svg");
+  background-image: url("../img/gif.svg");
 }
 
 .sitebar{
@@ -576,7 +593,7 @@ a{
 
 
 .emoji-nav{
-  border-bottom: 1px solid #8d8989;
+  border-bottom: 1px solid #d1cdcdaf;
 }
 
 .emoji-nav__link{
@@ -601,6 +618,26 @@ a{
 }
 
 .emojis__center{
-  height: 82.5vh;
+  height: 80vh;
   overflow: auto;
 }
+
+.emoji__col{
+  height: 100vh;
+}
+
+@media only screen and (max-width: 1140px) {
+  .emoji__col {
+    display: none !important;
+  }
+  .chat__time{
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 767.8px){
+  .message__col{
+    display: none;
+  }
+}
+
