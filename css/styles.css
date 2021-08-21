@@ -57,6 +57,7 @@ a{
   color: #222;
 }
 
+
 /* CHAT */
 
 .list-group-item.active .chat__person-send {
@@ -568,4 +569,38 @@ a{
 .sitebar__number{
   width: 30px;
   margin-right: 10px;
+}
+
+
+/* EMOJI */
+
+
+.emoji-nav{
+  border-bottom: 1px solid #8d8989;
+}
+
+.emoji-nav__link{
+  width: 33.3%;
+}
+
+.emoji-nav__link{
+  padding: 25px 0;
+}
+
+.item-emoji-icon{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.emojis__gif-item{
+  width: 150px;
+}
+
+.emojis__center{
+  height: 82.5vh;
+  overflow: auto;
 }
